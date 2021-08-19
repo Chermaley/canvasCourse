@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="/app.c328ef1a.css"></head>
+<style>html {
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        padding-top: 80px;
+        height: 100vh;
+        width: 100vw;
+        background: #afaaaa;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        background: #fff;
+        padding: 1rem;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, .2);
+    }
+    /*canvas {*/
+    /*    border: 1px solid black;*/
+    /*}*/</style>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="tg-chart" id="chart">
+            <div data-el="tooltip" class="tg-chart-tooltip"></div>
+            <canvas data-el="main"></canvas>
+
+            <div class="tg-chart-slider" data-el="slider">
+                <canvas></canvas>
+                <div data-el="left" class="tg-chart-slider__left">
+                    <div class="tg-chart-slider__arrow--left" data-el="arrow" data-type="left"></div>
+                </div>
+
+                <div data-el="window" data-type="window" class="tg-chart-slider__window"></div>
+
+                <div data-el="right" class="tg-chart-slider__right">
+                    <div class="tg-chart-slider__arrow--right" data-el="arrow" data-type="right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/app.c328ef1a.js"></script>
+</body>
+</html>
